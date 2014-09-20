@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Debug plugin for Domino OSGi
+Bundle-SymbolicName: com.ibm.domino.osgi.debug;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.ibm.domino.osgi.debug.Activator
+Bundle-Vendor: IBM
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.pde.ui,
+ org.eclipse.debug.core,
+ org.eclipse.jdt.core;bundle-version="3.5.2",
+ org.eclipse.ui.forms;bundle-version="3.5.100"
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy
