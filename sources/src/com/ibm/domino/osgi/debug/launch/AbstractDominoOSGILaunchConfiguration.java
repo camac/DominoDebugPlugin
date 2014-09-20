@@ -191,16 +191,14 @@ public abstract class AbstractDominoOSGILaunchConfiguration extends EquinoxLaunc
 			return;
 		}
 		
-		Map<?, ?> envMap = configuration.getAttribute( "org.eclipse.debug.core.environmentVariables", (Map<?,?>)null);
+		Map<String, String> envMap = configuration.getAttribute( "org.eclipse.debug.core.environmentVariables", (Map<String, String>)null);
 		if ( envMap != null ){
 			//Add all the env variables that start with "domino.osgi" to the config.ini
 			Map<String, String> dominoVars = new HashMap<String, String>();
-			for ( Object key : envMap.keySet() ){
-				if ( key instanceof String && ((String)key).startsWith( "domino.osgi" )){
-					Object value = envMap.get( key );
-					if ( value instanceof String ){
-						dominoVars.put( (String)key, (String)value );
-					}
+			for ( String key : envMap.keySet() ){
+				if (key.startsWith("domino.osgi")) {
+					String value = envMap.get(key);
+					dominoVars.put(key, value);
 				}
 			}
 			
