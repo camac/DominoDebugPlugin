@@ -383,7 +383,7 @@ public abstract class AbstractDominoOSGILaunchConfiguration extends EquinoxLaunc
 	 * @return
 	 */
 	private String computeTargetBundles(Map<?,?> workspacePlugins, String eclipseLocation ) {
-		URL[] pluginPaths = PluginPathFinder.getPluginPaths( eclipseLocation );
+		URL[] pluginPaths = PluginPathFinder.getPluginPaths( eclipseLocation , false);
 		PDEState pdeState = new PDEState( pluginPaths, true , true, new NullProgressMonitor() );
 		IPluginModelBase[] models = pdeState.getTargetModels();
 		return getTargetBundles( workspacePlugins, models );
