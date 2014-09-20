@@ -16,7 +16,7 @@ Please Test this with Eclipse Luna only.
 ### Uninstall previous version from Luna
 If you had already installed the previous version of Domino Debug Plugin into Eclipse Luna, please uninstall it from your Eclipse Luna installation before testing this new version. To do this go to:
 Help -> About Eclipse -> Installation Details
-Then select the Domino Debug Plugin in the Installed Software tab, and then click Uninstall at the bottem.
+Then select the Domino Debug Plugin in the Installed Software tab, and then click Uninstall at the bottom.
 
 ### Install New Version
 Download this repository either by cloning or use the GitHub download as zip option.
@@ -31,3 +31,10 @@ Create a new OSGi Debug Configuration just like you normally would. Apply / Debu
 The previous error would present itself at the point where you 'apply' or 'debug' the configuration, so this new version should not have that error at lall.
 
 Maybe play around with deselecting / selecting plugins and re-creating the ddebug config and verify that it is having the appropriate effect when domino is restarted.
+
+SUCCESS Reports (and bugs)
+--------------------------
+
+PLEASE report if you have success! Just post in the issues section of this repository. 
+Also report if you have any bugs.
+ 
