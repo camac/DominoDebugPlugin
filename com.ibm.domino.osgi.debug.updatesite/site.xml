@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.ibm.domino.osgi.debug.feature_1.0.1.201409210013.jar" id="com.ibm.domino.osgi.debug.feature" version="1.0.1.201409210013"/>
+</site>
