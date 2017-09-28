@@ -1,6 +1,10 @@
 DominoDebugPlugin
 =================
 
+> NOTE! This project is obsolete and you should now be able to use the 
+> [XPages SDK](https://www.openntf.org/main.nsf/project.xsp?r=project/XPages%20SDK%20for%20Eclipse%20RCP) which has absorbed the DominoDebugPlugin functionality into it, and works on latest versions
+> of Eclipse
+
 This Project is a minor modification of the Domino Debug Plugin contained in the XPages SDK for Eclipse project on OpenNTF.org
 
 The Domino Debug Plugin stopped working in Eclipse Luna.
